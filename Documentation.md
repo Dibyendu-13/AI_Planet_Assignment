@@ -68,5 +68,27 @@ This document outlines the Extract, Transform, Load (ETL) process implemented fo
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/Dibyendu-13/AI_Planet_Assignment.git
-   cd AI_Planet_Assignment
+   git clone <repository_url>
+   cd <repository_name>
+Configure PostgreSQL Credentials:
+
+Update database connection details (db_host, db_port, db_name, db_user, db_password) in the Metaflow workflow script (airbnb_etl_flow.py).
+Execute the Metaflow Workflow:
+
+Run the Metaflow workflow using Python:
+
+python airbnb_etl_flow.py run
+Follow the prompts to provide the price_limit parameter for data extraction.
+Monitor Workflow Execution:
+
+Metaflow provides real-time logs and status updates during workflow execution.
+Errors or retries will be logged with detailed messages to aid in troubleshooting.
+Verify Data:
+
+Check PostgreSQL tables (airbnb_nyc, transformed_airbnb_nyc) to ensure data has been loaded and transformed correctly.
+Example Usage
+
+# Run the Metaflow workflow with a price limit of 200
+python airbnb_etl_flow.py run --price_limit 200
+
+This documentation provides a comprehensive overview of the ETL process implemented for the Airbnb New York City dataset using Metaflow and PostgreSQL. It includes step-by-step instructions for setting up the environment, running the workflow, and verifying the results. Adjust the specifics (like database credentials and file names) to match your actual implementation.
