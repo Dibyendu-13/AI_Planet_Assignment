@@ -77,7 +77,7 @@ Execute the Metaflow Workflow.
 
 Run the Metaflow workflow using Python:
 
-python airbnb_etl_flow.py run
+python etl_flow.py run
 Follow the prompts to provide the price_limit parameter for data extraction.
 
 Metaflow provides real-time logs and status updates during workflow execution.
